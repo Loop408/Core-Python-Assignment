@@ -4,7 +4,7 @@ def get_bill(cart):
     """Return final amount after discount if applicable."""
     if len(cart) == 0:
         return "Your shopping cart is empty!"
-    
+
     amount = sum(cart.values())
     if len(cart) > 5:
         discount = 0.10 * amount
